@@ -1,0 +1,506 @@
+/* Responsive */
+/* Jika > 768px */
+@media ( min-width: 768px ) {
+  .content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 25px;
+    margin-top: 75px;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .content-result {
+    margin: 95px auto 0;
+    max-width: 1100px;
+  }
+
+  .content-search {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto ;
+  }
+
+  .containerk {
+    width: 85%;
+    margin: 75px auto 0;
+    padding: 10px;
+  }
+
+  .content-details {
+    display: flex;
+    gap: 20px;
+  }
+
+  .content-error {
+    margin-top: 90px;
+  }
+
+  .content-error img {
+    margin: 50px 0;
+    width: 500px;
+  }
+ 
+}
+
+@media ( max-width: 767px ) {
+  .content-search {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .content-result {
+    margin-top: 20px;
+  } 
+
+  .containerk {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content-error {
+    margin-top: 20px;
+  }
+
+  .content-error img {
+    max-width: 500px;
+  }
+}
+
+/* Batas Akhir Responsive */
+
+
+body {
+  background-color: rgba(33, 37, 41, 0.644);
+}
+
+/* Navbar *//* Navbar *//* Navbar */
+.myLinkKu {
+  width: 300px;
+}
+
+.dropdown-menu {
+  background-color: rgb(33,37,41);
+}
+
+.dropdownMenu2 {
+  background-color: rgb(33,37,41);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+  color: rgb(0,162,233);
+  /* color: green; */
+}
+
+.searchKu {
+  width: 300px;
+}
+
+#search-button {
+  border: 1px solid rgb(0,162,233);
+  color: rgb(0,162,233);
+}
+
+#search-button:hover {
+  color: white;
+  background-color: rgb(0,162,233);
+}
+
+#theLink,
+#navbarDropdown {
+  color: white;
+  transition: .5s;
+}
+
+#theLink:hover,
+#navbarDropdown:hover {
+  color:  rgb(0,162,233);
+}
+/* Content */
+.content {
+  padding: 20px;
+}
+
+
+
+/* Main Content */
+.displayKu {
+  margin-bottom: 40px;
+}
+.part {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+hr {
+  color: white;
+  margin-top: 0;
+  /* margin-bottom: 10px; */
+}
+
+span.judul {
+  /* padding: 5px; */
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.viewM {
+  margin-bottom: 3px;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(33,37,41);
+}
+
+.viewM a {
+  text-decoration: none;
+  color: white;
+}
+
+.viewM a:hover {
+  color: rgb(0,162,233);
+  /* background-color: rgb(33,37,41); */
+}
+
+/* Side Content */
+.movieOnGoing {
+  background-color: rgb(33,37,41);
+}
+
+.header-sideContent {
+  width: 100%;
+  background-color:rgb(0,162,233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.body-sideContent {
+  height: 600px;    
+  overflow: auto;
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+
+/* Modifikasi Scroll */
+.body-sideContent::-webkit-scrollbar {
+  width: 10px;
+  padding: 3px;
+}
+
+.body-sideContent::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+/* Batas akhir modifikasi Scroll */
+
+.mini-content {
+  background-color: #5f5d5d;
+  /* margin: 0 10px 10px; */
+  padding: 5px;
+  box-sizing: border-box;  
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.mini-head img {
+  width: 80px;
+  height: 115px;
+  margin-right: 10px;
+}
+
+.mini-body {
+  color: white;
+}
+
+.mini-body h5 {
+  font-size: 16px;
+}
+
+.mini-body p {
+  font-size: 10px;
+  margin: 2px 0;
+}
+
+/* Button Nav Kanan-Kiri */
+.r, .l  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 1px;
+  width: 50px;
+  background-color: rgb(51, 66, 82);
+  border-radius: 3px;
+  color: white;
+}
+
+.r:hover,
+.l:hover {
+  color: rgb(0,162,233);
+  background-color: rgb(33,37,41)
+}
+
+
+/* Content Hasil Search */
+
+h2.titleR {
+  margin-bottom: 0px;
+  font-family: 'Roboto Slab', sans-serif;
+  color: white;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid white;
+  background-color: black;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card span {
+  width: 100%;
+  position: absolute;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,0) 20%, black 80%);
+  bottom: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.showKu a.btn-detail {
+  width: 75%;
+  height: 30px;
+  background-color: rgb(0,162,233);
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showKu a.btn-detail:hover {
+  background-color: rgb(0, 129, 184);
+}
+
+.showKu {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.showKu:hover {
+  opacity: 1;
+}
+
+/* Content-Error */
+.content-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* KHUSUS *//* KHUSUS *//* KHUSUS *//* KHUSUS *//* KHUSUS *//* KHUSUS *//* KHUSUS *//* KHUSUS *//* KHUSUS *//* KHUSUS */
+.btn-details {
+  width: 75%;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,162,233);
+}
+
+.btn-details:hover {
+  background-color: rgb(0, 129, 184);
+}
+
+/* Container Movie Details */
+
+h2.titleD {
+  margin-bottom: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+.pict-details {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.other {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sub-other {
+  background-color: black;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sub-other img {
+  width: 16px;
+  height: 16px;
+}
+
+.ratings {
+  display: flex;
+}
+
+.score {
+  background-color: rgb(0,162,233);
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+img.star {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+
+.note-score pre {
+  color: rgb(240, 240, 240);
+  margin-bottom: 0;
+} 
+
+.text-details p {
+  margin-bottom: 0;
+  color: rgb(233, 233, 233);
+}
+
+.text-details p.capt {
+  text-transform: capitalize;
+}
+
+.text-details p strong {
+  color: rgb(17, 17, 17);
+}
+
+/* Pagination */
+#pagein {
+  margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33,37,41);
+  color: white;
+  margin-top: 80px;
+  padding: 10px 20px;
+  gap: 20px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.footers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  gap: 20px;
+}
+
+.barCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer3 {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer2 h4 {
+  font-size: 20px;
+}
+
+.sosmed {
+  display: flex;
+  gap: 10px;
+}
+
+.sosmed a img{
+  width: 30px;
+  height: 30px;
+  opacity: .6;
+}
+
+.sosmed a img:hover {
+  opacity: 1;
+}

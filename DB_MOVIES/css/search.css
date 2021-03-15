@@ -1,0 +1,179 @@
+/* Responsive */
+/* Jika < 768px */
+@media ( min-width: 768px ) {
+  .content {
+    margin-top: 65px;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .movie-list {
+    max-width: 960px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-auto-rows: .9fr; */
+    /* grid-auto-rows: 250px; */
+
+    gap: 10px;
+    margin: 0 auto;
+  }
+}
+
+/* JIka > 576px & < 768px */
+@media ( max-width: 767px ) {
+  .movie-list {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    gap: 10px;
+  }
+}
+
+/* Jika < 576px */
+@media ( max-width: 576px ) {
+  .movie-list {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+
+body {
+  background-color: rgba(33, 37, 41, 0.644);
+}
+
+/* Navbar *//* Navbar *//* Navbar */
+.myLinkKu {
+  width: 300px;
+}
+
+.dropdown-menu {
+  background-color: rgb(33,37,41);
+  padding: 5px;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+  color: rgb(0,162,233);
+}
+
+.searchKu {
+  width: 300px;
+}
+
+
+/* Content */
+.content {
+  padding: 20px;
+}
+
+/* Main Content */
+
+
+
+
+/* Button Nav Kanan-Kiri */
+.r, .l  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 1px;
+  width: 50px;
+  background-color: rgb(51, 66, 82);
+  border-radius: 3px;
+  color: white;
+}
+
+.r:hover,
+.l:hover {
+  color: rgb(0,162,233);
+  background-color: rgb(33,37,41)
+}
+
+/* .movieOnGoing {
+    
+} */
+
+
+/* Content Hasil Search */
+/* .movie-list {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+} */
+
+.card {
+  overflow: hidden;
+  /* border: none; */
+  position: relative;
+  border: 1px solid white;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card span {
+  width: 100%;
+  position: absolute;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,0) 20%, black 80%);
+  bottom: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.showKu a.btn-detail {
+  width: 75%;
+  height: 30px;
+  background-color: rgb(0,162,233);
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showKu a.btn-detail:hover {
+  background-color: rgb(3, 116, 165);
+}
+
+.showKu {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.showKu:hover {
+  opacity: 1;
+}
+
